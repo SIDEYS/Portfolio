@@ -93,9 +93,9 @@ with st.container():
 #     st.image(Image.open('./img/p3.png'))
   with col10:
     st.subheader("Portfolio Website Using Streamlit")
-    st.write("""Portfolio Website using Streamlit library, multi page stremlit webapp to showcase my work and skills """)
+    st.write("""The Streamlit Portfolio app is an immersive web application created with the Streamlit library, designed specifically to exhibit my professional portfolio, projects, and proficiencies. This multifaceted Streamlit web app delivers an interactive platform for displaying my capabilities and past works. """)
 
     st.markdown('`Python`, `Streamlit`')
 
-    Project5 = '[GitHub](https://github.com/mayuras7685/portfolio)'
+    Project5 = '[GitHub](https://github.com/SIDEYS/Portfolio)'
     st.markdown(Project5)
