@@ -7,6 +7,21 @@ st.set_page_config(page_title='Projects', page_icon='📂' )
 st.title('Projects')
 
 with st.container():
+   emptyBlock1, emptyBlock2 = st.columns((2,2))
+   with emptyBlock1:
+      st.write('')
+   with emptyBlock2:
+      st.write('')
+
+with st.container():
+   emptyBlock1, emptyBlock2 = st.columns((2,2))
+   with emptyBlock1:
+      st.write('')
+   with emptyBlock2:
+      st.write('')
+
+
+with st.container():
   col1,col2 = st.columns((1, 2))
   with col1:
     st.image(Image.open('./Images/realvsfakeimg.jpeg'))
