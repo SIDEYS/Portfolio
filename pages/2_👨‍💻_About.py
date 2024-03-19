@@ -1,52 +1,36 @@
 import streamlit as st
-import requests
 import streamlit.components.v1 as components
 
 st.set_page_config(page_title='About', page_icon='👨‍💻' )
 
 
+def txt(x, y):
+  Block1, Block2 = st.columns([4,1])
+  with Block1:
+    st.markdown(x)
+  with Block2:
+    st.markdown(y)
 
-def load_lottieurl(url: str):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
+def txt3(x, y):
+  Block1, Block2 = st.columns([1,2])
+  with Block1:
+    st.markdown(x)
+  with Block2:
+    st.markdown(y)
 
-def txt(a, b):
-  col1, col2 = st.columns([4,1])
-  with col1:
-    st.markdown(a)
-  with col2:
-    st.markdown(b)
-
-def txt3(a, b):
-  col1, col2 = st.columns([1,2])
-  with col1:
-    st.markdown(a)
-  with col2:
-    st.markdown(b)
-
-
-# lottie_url_hello = "https://assets1.lottiefiles.com/packages/lf20_vfpu2rpp.json"
 
 with st.container():
-   col1, col2 = st.columns([5, 1])
-   with col1:
+   Block1, Block2 = st.columns([5, 1])
+   with Block1:
       st.title('About 👨‍💻')
-
-      
-      
 
 
 
 with st.container():
       st.write('My name is Siddharth Bhangale, Currently I am pursuing ***Computer Science and Engineering*** from Indian Institute of Information Technology, Surat. I am in the pre final year of .')
 
-      st.write('I am a very hardworking individual .')
+      st.write('I am an individual with diverse interests, passionate about learning and exploring new ideas. I enjoy connecting with people, fostering creativity, and making a positive impact on the world around me. I am a Backend Developer and a AI/ML enthusiast')
         
-
-   
-
 
 st.title('Education 📖')
 
@@ -77,21 +61,21 @@ st.markdown('''
 
 
 with st.container():
-   col5, col6 = st.columns((2,2))
-   with col5:
+   emptyBlock1, emptyBlock2 = st.columns((2,2))
+   with emptyBlock1:
       st.write('')
-   with col6:
+   with emptyBlock2:
       st.write('')
 
 with st.container():
-   col7, col8 = st.columns((2,2))
-   with col7:
+   emptyBlock1, emptyBlock2 = st.columns((2,2))
+   with emptyBlock1:
       st.write('')
-   with col8:
+   with emptyBlock2:
       st.write('')
+
 
 st.title('Skills & Tools ⚒️')
-
 
 txt3('Programming', '`C`,`C++`,`Javascript`,`Python`')
 txt3('Data processing/wrangling', '`pandas`, `numpy`')
@@ -105,10 +89,10 @@ txt3('Version Control', '`git`,`Github`')
 txt3('Model deployment', '`streamlit`, `Heroku`')
 
 with st.container():
-   emptyBlock1, emptyBlock2 = st.columns((2,2))
-   with emptyBlock1:
+   emptyBlock3, emptyBlock4 = st.columns((2,2))
+   with emptyBlock3:
       st.write('')
-   with emptyBlock2:
+   with emptyBlock4:
       st.write('')
 
 with st.container():
@@ -125,23 +109,3 @@ with st.container():
    with block2:
       st.download_button('Download Resume',pdfFileObj,file_name='Sidd_resume_updated.pdf',mime='pdf')
 
-
-
-
-# col11, col12, col13 , col14, col15 = st.columns(5)
-
-# with col11:
-#     pass
-# with col12:
-#     pass
-# with col14:
-#     pass
-# with col15:
-#     pass
-# with col13 :
-#     center_button = st.download_button('Resume',pdfFileObj,file_name='mayur_resume.pdf',mime='pdf')
-
-
-#resume 
-# pdfFileObj = open('mayur_resume.pdf', 'rb')
-# st.download_button('Resume',pdfFileObj,file_name='mayur_resume.pdf',mime='pdf')
