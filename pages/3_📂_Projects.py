@@ -8,8 +8,8 @@ st.title('Projects')
 
 with st.container():
   col1,col2 = st.columns((1, 2))
-#   with col1:
-#     st.image(Image.open('./img/p6.png'))
+  with col1:
+    st.image(Image.open('./Images/realvsfakeimg.jpeg'))
   with col2:
     st.subheader("Real-vs-FakeImg")
     st.write("""
@@ -25,8 +25,8 @@ st.write('---')
 
 with st.container():
   col1,col2 = st.columns((1, 2))
-#   with col1:
-#     st.image(Image.open('./img/p2.png'))
+  with col1:
+    st.image(Image.open('./Images/deceptiverevimg.jpeg'))
   with col2:
     st.subheader("SpamSlueth")
     st.write("""
@@ -42,8 +42,8 @@ st.write('---')
 
 with st.container():
   col3,col4 = st.columns((1, 2))
-#   with col3:
-#     st.image(Image.open('./img/p5.png'))
+  with col3:
+    st.image(Image.open('./Images/mlprojectsimg.jpeg'))
   with col4:
     st.subheader("ML-Projects")
     st.write("""Diverse machine learning projects, encompassing regression, classification, and clustering models. . Achieved impactful results through data-driven insights and innovative problem-solving techniques..""")
@@ -55,27 +55,10 @@ with st.container():
 
 st.write('---')
 
-# with st.container():
-#   col5,col6 = st.columns((1, 2))
-# #   with col5:
-# #     st.image(Image.open('./img/p1.png'))
-#   with col6:
-#     st.subheader("Olympic Data Analysis Web Application")
-#     st.write("""
-#     This analysis will provide detailed and accurate information regarding various factors which leads to the evolution of Olympic Games and improvement of Countries/Players over the time in visual format.
-#     """)
-
-#     st.markdown('`EDA`, `Streamlit`, `pandas`, `matplotlib`, `plotly`, `seaborn`')
-
-#     g3 = '[GitHub](https://github.com/mayuras7685/Olympics-data-analysis)'
-#     st.markdown(g3)
-
-# st.write('---')
-
 with st.container():
   col7,col8 = st.columns((1, 2))
-#   with col7:
-#     st.image(Image.open('./img/p4.png'))
+  with col7:
+    st.image(Image.open('./Images/FakeNews.jpg'))
   with col8:
     st.subheader("Fake News Classifier")
     st.write("""Developed a Fake News Classifier using natural language processing and Bidirectional Recurrent neural networks to identify and mitigate misinformation, promoting media literacy and fostering informed decision-making""")
@@ -89,8 +72,8 @@ st.write('---')
 
 with st.container():
   col9,col10 = st.columns((1, 2))
-#   with col9:
-#     st.image(Image.open('./img/p3.png'))
+  with col9:
+    st.image(Image.open('./Images/streamlitimg.jpeg'))
   with col10:
     st.subheader("Portfolio Website Using Streamlit")
     st.write("""The Streamlit Portfolio app is an immersive web application created with the Streamlit library, designed specifically to exhibit my professional portfolio, projects, and proficiencies. This multifaceted Streamlit web app delivers an interactive platform for displaying my capabilities and past works. """)
